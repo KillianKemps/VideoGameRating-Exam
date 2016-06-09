@@ -1,5 +1,7 @@
 <h1>VideoGames</h1>
 
+<%= link_to 'Add', video_games_add_path %>
+
 <% if @video_games.any? %>
   <ul>
     <% @video_games.each do |video_game| %>

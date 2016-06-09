@@ -1,2 +1,14 @@
-<h1>VideoGames#add</h1>
-<p>Find me in app/views/video_games/add.html.erb</p>
+<h1>VideoGames</h1>
+
+<h1>VideoGameAnalysis</h1>
+<h2>Add page</h2>
+
+<%= form_tag(video_games_add_path, method: "get") do %>
+  <%= label_tag(:name, "Name:") %>
+  <%= text_field_tag(:name) %>
+  <%= label_tag(:editor, "Editor:") %>
+  <%= text_field_tag(:editor) %>
+  <%= label_tag(:description, "Description:") %>
+  <%= text_field_tag(:description) %>
+  <%= submit_tag("Add") %>
+<% end %>

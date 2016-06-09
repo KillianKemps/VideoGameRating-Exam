@@ -1,7 +1,9 @@
 class VideoGamesController < ApplicationController
   def add
     # Temporary
-    @video_game = VideoGame.create(name: 'test name', editor: 'test editor', description: 'test descr')
+    if params["name"] and params["description"] and params["editor"]
+      @video_game = VideoGame.create(name: params["name"], editor: params["editor"], description: params["description"])
+    end
   end
 
   def index
