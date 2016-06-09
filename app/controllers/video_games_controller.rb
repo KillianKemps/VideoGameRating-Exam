@@ -1,6 +1,6 @@
 class VideoGamesController < ApplicationController
   def add
-    # No idea why 'create' method doesn't work
+    # Temporary
     @video_game = VideoGame.create(name: 'test name', editor: 'test editor', description: 'test descr')
   end
 
