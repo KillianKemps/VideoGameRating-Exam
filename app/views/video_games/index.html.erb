@@ -1,2 +1,14 @@
 <h1>VideoGames#index</h1>
 <p>Find me in app/views/video_games/index.html.erb</p>
+
+<% if @video_games.any? %>
+  <ul>
+    <% @video_games.each do |video_game| %>
+      <li>
+        <span class="video-game-name">
+          <%= video_game.name %>
+        </span>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

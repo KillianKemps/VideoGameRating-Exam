@@ -3,6 +3,7 @@ class VideoGamesController < ApplicationController
   end
 
   def index
+    @video_games = VideoGame.all
   end
 
   def show
