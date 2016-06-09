@@ -1,5 +1,4 @@
-<h1>VideoGames#index</h1>
-<p>Find me in app/views/video_games/index.html.erb</p>
+<h1>VideoGames</h1>
 
 <% if @video_games.any? %>
   <ul>
@@ -8,6 +7,8 @@
         <span class="video-game-name">
           <%= video_game.name %>
         </span>
+        <p>Editor: <%= video_game.editor %></p>
+        <p>Description: <%= video_game.description %></p>
       </li>
     <% end %>
   </ul>
